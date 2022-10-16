@@ -1,4 +1,4 @@
-// import React from 'react';
+import './Component.css';
 const myJson = require('./Files.json');
 
 function LiMaker(props)
@@ -9,11 +9,11 @@ function LiMaker(props)
       }
  
     const updatedList = myJson.map((listItems)=>{
-        return <li>{removeExtension(listItems)}</li>;
+        return <li className="mx-1">{removeExtension(listItems)}</li>;
     });
   
     return(
-        <ul>{updatedList}</ul>
+        <ul className='d-flex'>{updatedList}</ul>
     );
 }
 

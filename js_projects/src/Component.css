@@ -4,3 +4,17 @@
     box-sizing: border-box;
 }
 
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav{
+    background-color: rgb(93, 93, 139);
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
