@@ -9,7 +9,9 @@ function LiMaker(props)
       }
  
     const updatedList = myJson.map((listItems)=>{
-        return <li className="mx-1">{removeExtension(listItems)}</li>;
+        return <li className="mx-1">
+            {removeExtension(listItems)} 
+        </li>;
     });
   
     return(

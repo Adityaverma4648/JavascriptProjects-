@@ -19,7 +19,7 @@ function Navbar(){
                         <div className="d-flex align-items-center justify-content-center">
                         <LiMaker menuitems = {myJson} />
                         </div>
-                        <div>
+                        <div className="px-2">
                             <button type="button" className = "btn btn-info" >
                                  Play Songs
                             </button>
