@@ -1,5 +1,5 @@
 
-const ResponsiveBlogSite = () =>{
+const MusicPlayer = () =>{
   return(
     
      <div className="h3">
@@ -10,4 +10,4 @@ const ResponsiveBlogSite = () =>{
 
 }
 
-export default ResponsiveBlogSite;
+export default MusicPlayer;

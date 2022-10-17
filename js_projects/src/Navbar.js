@@ -21,7 +21,7 @@ function Navbar(){
                         </div>
                         <div className="px-2">
                             <button type="button" className = "btn btn-info" >
-                                 Play Songs
+                                SomeThing Fun :)
                             </button>
                         </div>
             </div>
