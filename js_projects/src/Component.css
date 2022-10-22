@@ -11,6 +11,7 @@ li{
 
 .nav{
     background-color: rgb(93, 93, 139);
+    position: fixed;
 }
 ul{
     display: flex;

@@ -1,34 +1,39 @@
+import React, {useState} from 'react';
 import './Component.css';
+import Comp from './Comp';
+import App from '../src/App.js'
+
+
 const myJson = require('./Files.json');
 
-const nav = "hi";
-
-// () => {console.log(listItems)}
-
-function LiMaker(props)
+function LiMaker()
 {    
+    const [state, setstate] = useState({data:""})
+  
+     const changeState = (myNav) => {  
+           setstate({data: myNav}); 
+           console.log(myNav)
+       }; 
 
-    const ActiveNav = (name) => {
-        //   this.nav = name;
-          console.log(name)
-          return name;
-    }
+    // onClick= {this.ActiveNav(removeExtension(listItems))}
 
     function removeExtension(filename) {
         return filename.substring(0, filename.lastIndexOf('.')) || filename;
       }
 
     const updatedList = myJson.map((listItems)=>{       
-        return <li onClick= {() => ActiveNav(removeExtension(listItems))} className="mx-1" key={listItems} value={listItems}>
+        return <li onClick= {() => changeState(removeExtension(listItems))} className="mx-1" key={listItems} value={listItems}>
                    {removeExtension(listItems)} 
               </li>;
     });
   
     return(
-        <ul className='d-flex'>{updatedList}</ul>
+        <div>
+          <ul className='d-flex'>{updatedList}</ul>
+        </div>
     );
     
 }
 
+
 export default LiMaker;
-export const activeNav = nav;
