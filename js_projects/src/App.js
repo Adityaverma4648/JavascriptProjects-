@@ -1,35 +1,55 @@
 import './App.css';
-import Navbar from './Navbar';
-import MusicPlayer from '../src/Project/MusicPlayer'
-import LiMaker from './LiMaker';
-import Comp from './Comp';
+import AppRouting from "./AppRouting";
+import "../src/Component.css"
+import { FaStream } from "react-icons/fa"
 
+function App(){
 
+     const ToggleNav = () =>{
+          // return()
+          var li =  document.getElementsByClassName('.navlinks');
+          li.style.display = "block";
+     }
 
-function App(props) {
-
-  console.log(props.data)
-
-  return (
+  return ( 
+     
 
     <div className="App">
- 
-         <div>
-         <Navbar />
-         </div>
-
-        <div className="container-fluid bg-danger content row d-flex justify-content-center align-items-center">
-           <div className="col-sm-2 bg-warning">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi nostrum quo eos laboriosam sed officia, nulla qui velit, nihil aspernatur quam obcaecati ratione ab harum iure temporibus explicabo esse deleniti iusto expedita! Tempora expedita quo provident dolorum soluta autem unde iusto! Mollitia voluptas illum sit, officia similique esse nulla natus placeat consectetur aperiam consequatur in eaque magnam tempora excepturi labore numquam impedit. Saepe excepturi facere maxime.
-           </div>
-           <div className="col-sm-8 bg-info">
-                <MusicPlayer />
-           </div>
-  
+      
+        <div className="navbar container-fluid d-flex align-items-center justify-content-between ">
+        <div className="text-center px-2">
+           <h3>
+               1_FootInArt
+           </h3>
         </div>
-       <div>
-           {/* <Api /> */}
-       </div>
+            <ul className="navlists px-5">
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/" className='text-dark text-decoration-none px-2 py-1'>Home</a>  
+                    </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/MusicPlayer" className='text-dark text-decoration-none px-2 py-1'>MusicPlayer</a>
+                    </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/ToDoList" className='text-dark text-decoration-none px-2 py-1'>ToDoList</a>
+                    </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/Ecommerce" className='text-dark text-decoration-none px-2 py-1'>Ecommerce</a>
+                    </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/ResponsiveBlogSite" className='text-dark text-decoration-none px-2 py-1'>ResponsiveBlogSite</a>
+                    </li>
+                    <div className="px-2 myBurger">
+                       <FaStream className='burger' onClick={ToggleNav} />
+                    </div>
+                 </ul>    
+               
+        </div>
+        
+        <div className='py-5'> 
+        <AppRouting />
+        </div>
+
+       
     </div>
   );
 

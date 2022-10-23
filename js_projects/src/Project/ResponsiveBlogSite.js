@@ -1,11 +1,13 @@
 
 const ResponsiveBlogSite = () =>{
   return(
-    
-     <div className="h3">
-          Music play
-     </div>
-
+ 
+    <div className="compCont">
+              <h3>
+               Hello from blog site 
+              </h3>
+          </div>
+ 
   ) 
 
 }

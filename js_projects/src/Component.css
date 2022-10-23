@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -9,9 +10,9 @@ li{
     cursor: pointer;
 }
 
-.nav{
-    background-color: rgb(93, 93, 139);
+.navbar {
     position: fixed;
+    background-color: rgb(255, 255, 97);
 }
 ul{
     display: flex;
@@ -23,3 +24,61 @@ ul{
     max-width: 100vw;
     height: 97vh;
 }
+.compCont{
+    max-width: 100vw;
+    max-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myBurger{
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+/*  Music Player */
+
+.intro{
+  font-size: 90px;
+  height: 50vh;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*  ToDolist */
+
+.todolist{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.formCont{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(117, 145, 117, 0.281);
+}
+.Work{
+    width: 80%;
+    background-color: rgba(155, 150, 150, 0.281);
+}
+
+
+@media only screen and (max-width : 800px){
+
+    .myBurger{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+
+} 

@@ -1,9 +1,11 @@
 function Ecommerce(){
 
     return(
+        <div className="compCont">
         <h3>
-            Hello from ecommerce
+         Hello from Ecommerce 
         </h3>
+    </div>
     )
 
 }

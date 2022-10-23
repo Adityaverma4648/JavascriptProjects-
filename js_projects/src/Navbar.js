@@ -1,14 +1,5 @@
-import React, {useState} from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import React, {useState} from 'react';
 import '../src/Component.css';
-import LiMaker from './LiMaker';
-import Ecommerce from './Project/Ecommerce'
-import ToDoList from './Project/Ecommerce'
-import MusicPlayer from './Project/Ecommerce'
-import ResponsiveBlogSite from './Project/Ecommerce'
-
-
-const myJson = require('./Files.json');
 
 
 function Navbar(props){
@@ -22,19 +13,26 @@ function Navbar(props){
                 </h3>
             </div>
             <div className="navigate d-flex align-items-center justify-content-center">
-                        <div className="d-flex align-items-center justify-content-center">
-                        <BrowserRouter>
-                            <Route path='/'>
-                               <LiMaker menuitems = {myJson}/>
-                            </Route>
-                        </BrowserRouter>
-                          </div>
-                          <div className="px-2">
-                            <button type="button" className = "btn btn-info" >
-                                SomeThing Fun :)
-                            </button>
-                          </div>
-                        </div>
+                 <ul className="navlist">
+                    {/* <li className="navlists">
+                         <a href="http://localhost:3000/Home" className='text-white text-decoration-none px-2 py-1'>Home</a>
+                         
+                    </li> */}
+                    <li className="navlists">
+                         <a href="http://localhost:3000/MusicPlayer" className='text-white text-decoration-none px-2 py-1'>MusicPlayer</a>
+                    </li>
+                    <li className="navlists">
+                         <a href="http://localhost:3000/ToDoList" className='text-white text-decoration-none px-2 py-1'>ToDoList</a>
+                    </li>
+                    <li className="navlists">
+                         <a href="http://localhost:3000/Ecommerce" className='text-white text-decoration-none px-2 py-1'>Ecommerce</a>
+                    </li>
+                    <li className="navlists">
+                         <a href="http://localhost:3000/ResponsiveBlogSite" className='text-white text-decoration-none px-2 py-1'>ResponsiveBlogSite</a>
+                    </li>
+                 </ul>        
+                 </div>
+                
             </div>
     )
 
