@@ -15,7 +15,7 @@ function Form(){
   }
 
     return(
-                      <div className="conatiner formCont bg-none">
+                      <div className="continer formCont bg-none">
 {/*                        
                         <div className="timer">
                                 

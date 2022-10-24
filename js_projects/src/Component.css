@@ -10,6 +10,11 @@ li{
     cursor: pointer;
 }
 
+.OnclickEffect{
+    border-bottom: 2px solid rgb(105, 16, 16);
+}
+
+
 .navbar {
     position: fixed;
     background-color: rgb(255, 255, 97);
@@ -82,3 +87,19 @@ ul{
     }
 
 } 
+
+
+/*  Home .js */
+
+.Home {
+   max-height: 40vh;
+   padding: 1rem;
+   margin-top: 12px;
+}
+
+.card{
+    height: 30vh;
+    width: 10vw;
+    padding: 0.5rem;
+    margin: 0px 1rem;
+}
