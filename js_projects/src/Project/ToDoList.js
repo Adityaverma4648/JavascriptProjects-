@@ -35,7 +35,7 @@ function ToDoList(){
                  </div>
                  <div className="form container">
                  
-                   <form onSubmit={() => {alert("submitted")}}>
+                   <form>
                        <Form />                     
                    </form>
 

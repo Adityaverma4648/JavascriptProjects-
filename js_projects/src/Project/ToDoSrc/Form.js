@@ -1,9 +1,28 @@
+import {useState} from 'react';
+
 function Form(){
+ 
+  const [inputField ,setInputField ] = useState({
+       work : ''
+  })
+  
+  const InputHandler = (e) =>{
+         setInputField({[e.target.work] : e.target.value})
+  }
+
+  const OnSubmit = () => {
+      alert(inputField.work);
+  }
 
     return(
                       <div className="conatiner formCont bg-none">
-                        <input type="text" value=" " placeholder="Enter what u need to do" className="Work py-4 border border-4 border-opacity-10 border-light rounded-2"/>
-                        <input type="submit" value="Submit" />
+{/*                        
+                        <div className="timer">
+                                
+                        </div> */}
+
+                        <input type="text" onChange={InputHandler} value={inputField.work} placeholder="Enter what u need to do" className="Work py-4 border border-4 border-opacity-10 border-light rounded-2"/>
+                        <input type="submit" value="Submit" onClick={OnSubmit} className="bg-white px-1 py-4 border-4 border-white border-opacity-50"/>
                       </div>
                 
     )
