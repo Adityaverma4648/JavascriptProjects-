@@ -21,7 +21,8 @@ function Form(){
                                 
                         </div> */}
 
-                        <input type="text" onChange={InputHandler} value={inputField.work} placeholder="Enter what u need to do" className="Work py-4 border border-4 border-opacity-10 border-light rounded-2"/>
+                        <input type="text" onChange={InputHandler} name="Work" value={inputField.work} placeholder="Enter what u need to do" className="Work py-4 border border-4 border-opacity-10 border-light rounded-2" id="Work" />
+
                         <input type="submit" value="Submit" onClick={OnSubmit} className="bg-white px-1 py-4 border-4 border-white border-opacity-50"/>
                       </div>
                 

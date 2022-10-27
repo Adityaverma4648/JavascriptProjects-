@@ -41,13 +41,13 @@ const Home = () =>{
     ];
 
     return (
-        <div className="Home compCont bg-danger d-flex flex-column">
-             <div className="text-white">
-                  <h3>
+        <div className="Home compCont bg-black d-flex flex-column">
+             <div className="text-white container-fluid d-flex align-items-center justify-content-center">
+                  <h3 className='py-4'>
                     Projects
                   </h3>
              </div>
-            <div className="Home container-fluid bg-black text-white compCont d-flex align-items-center justify-content-center flex-wrap">
+            <div className="container-fluid text-white compCont d-flex align-items-center justify-content-center flex-wrap py-4">
                   
                   {projects.map((project , index)=>{
 

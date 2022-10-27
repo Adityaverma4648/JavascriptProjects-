@@ -1,7 +1,8 @@
-import './App.css';
 import AppRouting from "./AppRouting";
 import "../src/Component.css"
 import { FaStream } from "react-icons/fa"
+// import './App.css';
+
 
 function App(){
 
