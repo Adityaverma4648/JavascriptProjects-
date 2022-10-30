@@ -75,7 +75,15 @@ ul{
     width: 80%;
     background-color: rgba(155, 150, 150, 0.281);
 }
+.myWork{
+    width: 80%;
+    background-color: rgba(185, 172, 172, 0.781);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
 @media only screen and (max-width : 800px){
 
@@ -115,3 +123,51 @@ ul{
     transform: scale(1.3);
     z-index: 99;
 }
+
+
+/*  responsive site */
+.response{
+    max-height: 100vh;
+    max-width: 100vw;
+    color: #fff;
+}
+.btnCont{
+    font-size: 45px;
+}
+
+.categories{
+   height: 35vh;
+   width: 100vw;
+
+}
+.myHead{
+    font-size: 200px;
+    letter-spacing: 1rem;
+    /* opacity: 20; */
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+button{
+    background: linear-gradient(to left , rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.125));
+    backdrop-filter: blur(0.5rem);
+    height: 150px;
+    width: 150px;
+    margin: 0px 1rem ;
+    transition:all 0.4s ease-in-out; 
+    font-size: 80px;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+    transition:all 0.4s ease-in-out;
+    color: aqua;
+}
+/* .icon{
+
+    transition: all 0.4s ease-in-out;
+}
+.icon:hover{
+    transition: all 0.4s ease-in-out;
+   color: aqua;
+} */

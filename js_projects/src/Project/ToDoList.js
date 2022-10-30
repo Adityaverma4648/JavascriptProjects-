@@ -9,11 +9,6 @@ function ToDoList(){
                <Form />
              )
      }
-
-    // const handleOnchange = () => { 
-       
-    // }
-
     return(
 
           <div className="compCont">
