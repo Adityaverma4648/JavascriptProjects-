@@ -8,14 +8,6 @@ function Form(){
          setInputField(e.target.value);
   }
 
-  // // const onClickAdd = () => {
-  //      var   AddedWork = document.getElementById("AddedWork");
-  //      AddedWork.classList.add("myWork");
-  //      AddedWork.classList.add("container-fluid");
-  //      AddedWork.innerHTML = inputField
-  // // }
-  //     var SubmitBtn = document.getElementById('SubmitBtn');
-  //     // SubmitBtn.addEventListener = ("onClick")
 
 
 

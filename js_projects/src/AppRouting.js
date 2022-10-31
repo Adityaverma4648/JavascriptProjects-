@@ -5,6 +5,7 @@ import Ecommerce from './Project/Ecommerce'
 import ToDoList from './Project/ToDoList'
 import Home from './Pages/Home';
 import ResponsiveBlogSite from './Project/ResponsiveBlogSite'
+import ArtDisplay from "./Project/ArtDisplay"
 
 
 function AppRouting(){
@@ -16,9 +17,8 @@ function AppRouting(){
         <Route path="/ToDoList" element={<ToDoList />} />
         <Route path="/Ecommerce" element={<Ecommerce />} />
         <Route path="/MusicPLayer" element={<MusicPlayer />} />
-        {/* <Route path="/ToDoList" element={<ToDoList />} />
-        {/* <Route path="/ResponsiveBlogSite" element={<ResponsiveBlogSite />} /> */}
         <Route path="/ResponsiveBlogSite" element={<ResponsiveBlogSite />} /> 
+        <Route path="/ArtDisplay" element={<ArtDisplay />} /> 
       </Routes>
     </BrowserRouter>
     )

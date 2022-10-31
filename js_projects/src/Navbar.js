@@ -14,10 +14,6 @@ function Navbar(props){
             </div>
             <div className="navigate d-flex align-items-center justify-content-center">
                  <ul className="navlist">
-                    {/* <li className="navlists">
-                         <a href="http://localhost:3000/Home" className='text-white text-decoration-none px-2 py-1'>Home</a>
-                         
-                    </li> */}
                     <li className="navlists">
                          <a href="http://localhost:3000/MusicPlayer" className='text-white text-decoration-none px-2 py-1'>MusicPlayer</a>
                     </li>
@@ -29,6 +25,9 @@ function Navbar(props){
                     </li>
                     <li className="navlists">
                          <a href="http://localhost:3000/ResponsiveBlogSite" className='text-white text-decoration-none px-2 py-1'>ResponsiveBlogSite</a>
+                    </li>
+                    <li className="navlists">
+                         <a href="http://localhost:3000/ArtDisplay" className='text-white text-decoration-none px-2 py-1'>ArtDisplay</a>
                     </li>
                  </ul>        
                  </div>

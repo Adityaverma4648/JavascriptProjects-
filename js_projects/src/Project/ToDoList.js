@@ -2,13 +2,6 @@ import {useState} from 'react';
 import {FaRegPlusSquare} from 'react-icons/fa';
 import Form from './ToDoSrc/Form';
 function ToDoList(){
-
-     const  OnClickAdd = () => {
-        var form = document.querySelector("form")
-             form.append(
-               <Form />
-             )
-     }
     return(
 
           <div className="compCont">
@@ -18,7 +11,7 @@ function ToDoList(){
                     To Do List
                   </h3>
                   <div className="Addvalue d-flex align-items-center justify-content-center">
-                     <button type='button' className='px-3 py-1 bg-primary text-white d-flex align-items-center justify-content-center' onClick={OnClickAdd}>
+                     <button type='button' className='px-3 py-1 bg-primary text-white d-flex align-items-center justify-content-center'>
                              <p className='px-2'>
                                Add Work
                              </p>

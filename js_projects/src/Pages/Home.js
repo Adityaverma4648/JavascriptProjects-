@@ -24,7 +24,7 @@ const Home = () =>{
             image : "lorem23"
         },
         {
-            name : "allu",
+            name : "ArtDisplay",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
             image : "lorem23"
         },

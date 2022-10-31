@@ -40,6 +40,9 @@ function App(){
                     <li className="navlinks px-1">
                          <a href="http://localhost:3000/ResponsiveBlogSite" className='text-dark text-decoration-none px-2 py-1'>ResponsiveBlogSite</a>
                     </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/ArtDisplay" className='text-dark text-decoration-none px-2 py-1'>ArtDisplay</a>
+                    </li>
                     <div className="px-2 myBurger">
                        <FaStream className='burger' onClick={ToggleNav} />
                     </div>
@@ -51,7 +54,6 @@ function App(){
         <AppRouting />
         </div>
 
-       
     </div>
   );
 
