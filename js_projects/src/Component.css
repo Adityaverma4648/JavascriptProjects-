@@ -46,15 +46,61 @@ ul{
 
 /*  Music Player */
 
-.intro{
-  font-size: 90px;
+.introMusicPlayer{
   height: 50vh;
-  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.headingMusicPlayer{
+      color: rgba(255, 255, 255, 0.3);  
+      font-size: 290px;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
 }
 
+.SongCards{
+   max-height: 50vh;
+   position: absolute;
+   max-width: 100vw;
+}
+
+
+/* songCArds.js */
+
+.songCardCont{
+    max-width: 95vw;
+}
+.songCards{
+    width: 95vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+}
+.songCards a{
+    text-decoration: none;
+    color: #fff;
+}
+.songCards::-webkit-scrollbar{
+     display: none;
+}
+.songCards img{
+    width: 250px;
+}
+/* .songCards::hover{
+    
+} */
+.songCards div{
+    margin: 0px 10px;
+}
+.ScrollBtn{
+    /* width: 50vw; */
+    z-index: 9999;
+    border : none;
+}
 
 /*  ToDolist */
 
@@ -173,11 +219,11 @@ ul{
    width: 100vw;
    height: auto;
 }
-.FetchContent div{
+/* .FetchContent div{
     min-height: 100vh;
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
-}
+} */

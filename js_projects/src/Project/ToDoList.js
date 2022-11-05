@@ -2,6 +2,26 @@ import {useState} from 'react';
 import {FaRegPlusSquare} from 'react-icons/fa';
 import Form from './ToDoSrc/Form';
 function ToDoList(){
+
+  const [state] = useState("");
+  
+  const MakeWork = () =>{
+    var AddedForm = document.getElementById("AddedForm");
+    var Cont = document.createElement("div")
+    Cont.classList.add("bg-secondary","text-white","container","d-flex","flex-column" );
+    var checker = document.createElement("input");
+    checker.type ="checkbox"
+    checker.className = "py-3 px-2 border-1 border-dark bg-secondary"
+    var title = document.createElement("p");
+    title.classList.add("text-danger","px-2","py-3");
+    title.innerHTML = "inputField";
+    
+    AddedForm.append(Cont)
+     
+    Cont.appendChild(checker);
+    Cont.appendChild(title);
+  }
+
     return(
 
           <div className="compCont">
@@ -22,7 +42,10 @@ function ToDoList(){
                   </div>
                  </div>
                  <div className="form container">
-                 
+
+                       {/* Dynamic fetcher */}
+                     <div className="AddedForm" id='AddedForm'></div>  
+                  
                    <form>
                        <Form />                     
                    </form>

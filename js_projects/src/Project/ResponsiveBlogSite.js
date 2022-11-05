@@ -16,8 +16,8 @@ const ResponsiveBlogSite = () =>{
                     <h1 className="text-secondary position-relative myHead opacity-25">
                       CATEGORIES
                     </h1>
-                    <div className="position-absolute">
-                      <div className="p-2 d-flex justify-content-center">
+                    <div className="position-absolute py-2">
+                      <div className="p-1 d-flex justify-content-center">
                       <a href="#ArtBlog" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="top" title="Art Blog">
                         <FaBrush className="icon"/>
                     </a>
@@ -25,7 +25,7 @@ const ResponsiveBlogSite = () =>{
                         <FaGamepad  className="icon" />
                     </a>
                    </div>
-                     <div className="p-2" >
+                     <div className="p-1" >
                       <a href="#ReactBlog" type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="bottom" title="React Dev Blog">
                         <FaReact  className="icon" />
                       </a>
@@ -35,19 +35,7 @@ const ResponsiveBlogSite = () =>{
                      </div>
                     </div>
               </div>
-              <div className="FetchContent bg-black text-center" id = "FetchContent">
-                 <div id="ArtBlog">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui et facilis quibusdam aliquam recusandae a! Perferendis totam vero odio eius iste enim minus modi id beatae impedit natus ab recusandae, suscipit ea eaque, aliquid, nulla ex illum explicabo voluptate magni aperiam odit dolores aspernatur. Exercitationem est, natus, debitis minus aliquam atque distinctio veritatis quasi aspernatur reiciendis aut libero porro nihil eveniet? Est nemo tenetur praesentium sed architecto eligendi?
-                 </div>
-                 <div id="GamePad">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui et facilis quibusdam aliquam recusandae a! Perferendis totam vero odio eius iste enim minus modi id beatae impedit natus ab recusandae, suscipit ea eaque, aliquid, nulla ex illum explicabo voluptate magni aperiam odit dolores aspernatur. Exercitationem est, natus, debitis minus aliquam atque distinctio veritatis quasi aspernatur reiciendis aut libero porro nihil eveniet? Est nemo tenetur praesentium sed architecto eligendi?
-                 </div>
-                 <div id="ReactBlog">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui et facilis quibusdam aliquam recusandae a! Perferendis totam vero odio eius iste enim minus modi id beatae impedit natus ab recusandae, suscipit ea eaque, aliquid, nulla ex illum explicabo voluptate magni aperiam odit dolores aspernatur. Exercitationem est, natus, debitis minus aliquam atque distinctio veritatis quasi aspernatur reiciendis aut libero porro nihil eveniet? Est nemo tenetur praesentium sed architecto eligendi?
-                 </div>
-                 <div id="Volley">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui et facilis quibusdam aliquam recusandae a! Perferendis totam vero odio eius iste enim minus modi id beatae impedit natus ab recusandae, suscipit ea eaque, aliquid, nulla ex illum explicabo voluptate magni aperiam odit dolores aspernatur. Exercitationem est, natus, debitis minus aliquam atque distinctio veritatis quasi aspernatur reiciendis aut libero porro nihil eveniet? Est nemo tenetur praesentium sed architecto eligendi?
-                 </div>
+              <div className="FetchContent bg-black text-center" id = "FetchContent container-fluid">
               </div>
           </div>
  

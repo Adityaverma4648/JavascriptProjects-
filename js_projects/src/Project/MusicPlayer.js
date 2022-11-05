@@ -1,11 +1,18 @@
-import React, {Component} from "react";
+import React from "react";
+import SongCard from "../Project/musicPLayer/SongCard"
 import '../Component.css' 
 
 const MusicPlayer = () =>{
   return(
      <div className="compCont">
-          <div className="intro container-fluid bg-black text-light">
-                 Music Player 
+          <div className="introMusicPlayer container-fluid bg-black" >
+                <h1 className="headingMusicPlayer">
+                Music Player 
+                </h1>
+                <div className="SongCards" >
+                    <SongCard />
+                </div>
+
           </div>
      </div>
   ) 
