@@ -36,7 +36,7 @@ const SongCards = () =>{
                     const image = item.images.coverart;
                     const music = item.url;
                   
-                    console.log(music)
+                    console.log(item)
 
                     const card = '<div><a href="'+ music + '"  ><img src = "'+ image + '" alt = "' + title +'"> <small>' + title + '</small></a></div>' 
 
@@ -46,18 +46,21 @@ const SongCards = () =>{
               })
               .catch(err => console.error(err));
    return (
-     <div className="container-fluid d-flex align-items-center" >
+    <div className="d-flex flex-column">
+       <div className="HeadingSongCard display-6 text-white">Top Charts</div>
+       <div className="container-fluid d-flex align-items-center bg-danger" >
               <button type="button" className="ScrollBtn leftBtnScroll bg-info px-3 py-4" onClick={scrollLeft}>
                    <FaAngleDoubleLeft />
             </button>
-         <div className="container-fluid SongCardCont d-flex align-items-center justify-content-center">
-               <div className="songCards text-white"></div>
+         <div className="container-fluid SongCardCont d-flex align-items-center justify-content-center ">
+               <div className="songCards text-white bg-warning"></div>
          </div> 
              <button type="button" className="rightBtnScroll ScrollBtn bg-info px-3 py-4" onClick={scrollRight}>
                    <FaAngleDoubleRight />
             </button>
 
      </div>
+    </div>
    )
 }
 
