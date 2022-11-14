@@ -110,7 +110,7 @@ ul{
     overflow: hidden;
 }
 .formCont{
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -219,11 +219,18 @@ ul{
    width: 100vw;
    height: auto;
 }
-/* .FetchContent div{
-    min-height: 100vh;
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-} */
+#myWork div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 108, 139);
+    border-bottom: 3px solid rgba(17, 17, 17, 0.281);
+}
+#myWork div p,span{
+    width: 49%;
+    text-align : center;
+}

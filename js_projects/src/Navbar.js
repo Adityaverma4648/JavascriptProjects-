@@ -2,7 +2,7 @@
 import '../src/Component.css';
 
 
-function Navbar(props){
+function Navbar(){
 
     return (
         <div className="nav container-fluid d-flex justify-content-between align-items-center text-light">
