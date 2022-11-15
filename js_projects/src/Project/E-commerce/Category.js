@@ -11,9 +11,8 @@ const options = {
 
 fetch('https://amazon24.p.rapidapi.com/api/category?country=US', options)
 	.then(response => response.json())
-	.then(response => {
-        response.map((item) =>{
-            console.log(item)
+	.then(data => {
+        data.map((item) =>{
             const categoryName = item.name;
             const id =item.id
             let catCont = document.getElementById("catCont");
@@ -26,7 +25,6 @@ fetch('https://amazon24.p.rapidapi.com/api/category?country=US', options)
 
   return (
     <div id="catCont" className="container-fluid d-flex flex-wrap justify-content-center align-items-center">
-        
     </div>
   )
 }

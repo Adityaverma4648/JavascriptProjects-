@@ -17,7 +17,7 @@ function Form(props){
   const setWork = (e)=>{
       e.preventDefault();
       const  myWork = document.getElementById('myWork');
-      const work = '<div><input type="checkbox" name='+ inputField +' /><p>'+ inputField +'</p><span></Timer ></span></div>' 
+      const work = '<div><input type="checkbox" name='+ inputField +' /><p>'+ inputField +'</p><span><Timer /></span></div>' 
       myWork.innerHTML += work;
   }
 

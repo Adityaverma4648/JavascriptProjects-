@@ -251,7 +251,8 @@ ul{
 
 #catCont small{
    padding: 5px 1rem;
-   background-color: grey;
+   margin: 1px;
+   background-color: rgb(65, 65, 65);
  }
 #catCont::-webkit-scrollbar{
     display: none;
