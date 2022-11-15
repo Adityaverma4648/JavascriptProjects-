@@ -1,38 +1,73 @@
-const Timer = () => {
+import React, { useRef } from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-    if(localStorage.getItem("total_seconds")){
-        var total_seconds = localStorage.getItem("total_seconds");
-    } else {
-        var total_seconds = 60*10;
+
+const Timer = () => {
+    const Ref = useRef(null);
+
+    const [timer , setTimer] = useState('00:00:00');
+
+    const getTimeRemaining = (e) => {
+        const total = Date.parse(e) - Date.parse(new Date());
+        const seconds = Math.floor((total / 1000) % 60);
+        const minutes = Math.floor((total / 1000 / 60) % 60);
+        const hours = Math.floor((total / 1000 / 60 / 60) % 24);
+        return {
+            total, hours, minutes, seconds
+        };
     }
-    var minutes = parseInt(total_seconds/60);
-    var seconds = parseInt(total_seconds%60);
-    function countDownTimer(){
-        if(seconds < 10){
-            seconds= "0"+ seconds ;
-        }if(minutes < 10){
-            minutes= "0"+ minutes ;
-        }
-        
-        document.getElementById("quiz-time-left").innerHTML = "Time Left :"+minutes+"minutes"+seconds+"seconds";
-        if(total_seconds <= 0){
-            setTimeout("document.quiz.submit()",1);
-        } else {
-            total_seconds = total_seconds -1 ;
-            minutes = parseInt(total_seconds/60);
-            seconds = parseInt(total_seconds%60);
-            localStorage.setItem("total_seconds",total_seconds)
-            setTimeout("countDownTimer()",1000);
+  
+  
+    const startTimer = (e) => {
+        let { total, hours, minutes, seconds } 
+                    = getTimeRemaining(e);
+        if (total >= 0) {
+  
+            // update the timer
+            // check if less than 10 then we need to 
+            // add '0' at the beginning of the variable
+            setTimer(
+                (hours > 9 ? hours : '0' + hours) + ':' +
+                (minutes > 9 ? minutes : '0' + minutes) + ':'
+                + (seconds > 9 ? seconds : '0' + seconds)
+            )
         }
     }
-    setTimeout("countDownTimer()",1000);
-    
+  
+  
+    const clearTimer = (e) => {
+   
+        setTimer('01:00:00');
+  
+        if (Ref.current) clearInterval(Ref.current);
+        const id = setInterval(() => {
+            startTimer(e);
+        }, 1000)
+        Ref.current = id;
+    }
+  
+    const getDeadTime = () => {
+        let deadline = new Date();
+ 
+        deadline.setSeconds(deadline.getSeconds() + 3600);
+        return deadline;
+    }
+  
+    useEffect(() => {
+        clearTimer(getDeadTime());
+    }, []);
+  
+
+    const onClickReset = () => {
+        clearTimer(getDeadTime());
+    }
   return (
-          <div>
-                <div id="quiz-time-left"></div>
-          </div>
+    <div className='Timer d-flex justify-content-end'>
+            <h2>{timer}</h2>
+            <button onClick={onClickReset} className="border-0 px-2 py-1 mx-2">Reset</button>
+    </div>
   )
 }
-
 
 export default Timer;

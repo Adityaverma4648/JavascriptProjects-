@@ -17,15 +17,15 @@ function Form(props){
   const setWork = (e)=>{
       e.preventDefault();
       const  myWork = document.getElementById('myWork');
-      const work = '<div><input type="checkbox" name='+ inputField +' /><p>'+ inputField +'</p><span>Timer</span></div>' 
+      const work = '<div><input type="checkbox" name='+ inputField +' /><p>'+ inputField +'</p><span></Timer ></span></div>' 
       myWork.innerHTML += work;
   }
 
     return(          <>
                      <div className="container-fluid d-flex flex-column" id='myWork'>
                           {/*  default */}
-                          <div><input type="checkbox" name={defaultToDoWork[0].work} /><p>{defaultToDoWork[0].work}</p><span>Timer</span></div>
-                          <div><input type="checkbox" name={defaultToDoWork[1].work} /><p>{defaultToDoWork[1].work}</p><span>Timer </span></div>
+                          <div><input type="checkbox" name={defaultToDoWork[0].work} /><p>{defaultToDoWork[0].work}</p><Timer /></div>
+                          <div><input type="checkbox" name={defaultToDoWork[1].work} /><p>{defaultToDoWork[1].work}</p><Timer /></div>
                   
                      </div>
                      <div className='d-flex flex-column container-fluid'>

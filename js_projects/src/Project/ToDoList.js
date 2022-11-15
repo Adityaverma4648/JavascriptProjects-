@@ -4,7 +4,7 @@ function ToDoList(){
 
   const WorkAdder = () =>{
      var myInputForm =   document.getElementById('myInputForm');
-     myInputForm.classList.toggle("");
+     myInputForm.classList.toggle("d-none");
   }
 
     return(
@@ -17,8 +17,8 @@ function ToDoList(){
                   </h3>
                   <div className="Addvalue d-flex align-items-center justify-content-center">
                      <button type='button' className='px-3 py-1 bg-primary text-white d-flex align-items-center justify-content-center' onClick={WorkAdder}>
-                             <span className='px-2'>
-                               Add Work
+                             <span className="mx-3">
+                               AddWork
                              </span>
                              <span>
                              <FaRegPlusSquare />

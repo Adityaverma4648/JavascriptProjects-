@@ -13,14 +13,20 @@ fetch('https://amazon24.p.rapidapi.com/api/category?country=US', options)
 	.then(response => response.json())
 	.then(response => {
         response.map((item) =>{
-            // const 
+            console.log(item)
+            const categoryName = item.name;
+            const id =item.id
+            let catCont = document.getElementById("catCont");
+            const content = '<small id="'+ id +'">'+ categoryName +'</small>'
+            catCont.innerHTML += content
+
         })
     })
 	.catch(err => console.error(err)); 
 
   return (
-    <div id="catCont" className="">
-         {/* <div id="cat"></div> */}
+    <div id="catCont" className="container-fluid d-flex flex-wrap justify-content-center align-items-center">
+        
     </div>
   )
 }
