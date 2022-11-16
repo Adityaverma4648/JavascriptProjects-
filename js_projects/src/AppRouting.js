@@ -5,7 +5,8 @@ import Ecommerce from './Project/Ecommerce'
 import ToDoList from './Project/ToDoList'
 import Home from './Pages/Home';
 import ResponsiveBlogSite from './Project/ResponsiveBlogSite'
-import ArtDisplay from "./Project/ArtDisplay"
+import ArtDisplay from "./Project/ArtDisplay";
+import Calculator from "./Calculator";
 
 
 function AppRouting(){
@@ -19,6 +20,8 @@ function AppRouting(){
         <Route path="/MusicPLayer" element={<MusicPlayer />} />
         <Route path="/ResponsiveBlogSite" element={<ResponsiveBlogSite />} /> 
         <Route path="/ArtDisplay" element={<ArtDisplay />} /> 
+        <Route path="/Calculator" element={<Calculator />} /> 
+
       </Routes>
     </BrowserRouter>
     )

@@ -28,6 +28,9 @@ function Navbar(){
                     <li className="navlists">
                          <a href="http://localhost:3000/ArtDisplay" className='text-white text-decoration-none px-2 py-1'>ArtDisplay</a>
                     </li>
+                    <li className="navlists">
+                         <a href="http://localhost:3000/Calculator" className='text-white text-decoration-none px-2 py-1'>Calculator</a>
+                    </li>
                  </ul>        
                  </div>
                 
