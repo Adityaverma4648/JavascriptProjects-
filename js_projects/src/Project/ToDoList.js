@@ -3,7 +3,7 @@ import Form from './ToDoSrc/Form';
 function ToDoList(){
 
   const WorkAdder = () =>{
-     var myInputForm =   document.getElementById('myInputForm');
+     var myInputForm =   document.getElementById('myFormCont');
      myInputForm.classList.toggle("d-none");
   }
 

@@ -29,7 +29,7 @@ const Home = () =>{
             image : "lorem23"
         },
         {
-            name : "Ecommerce",
+            name : "Calculator",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
             image : "lorem23"
         },

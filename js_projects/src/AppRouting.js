@@ -6,7 +6,7 @@ import ToDoList from './Project/ToDoList'
 import Home from './Pages/Home';
 import ResponsiveBlogSite from './Project/ResponsiveBlogSite'
 import ArtDisplay from "./Project/ArtDisplay";
-import Calculator from "./Calculator";
+import Calculator from "./Project/Calculator";
 
 
 function AppRouting(){

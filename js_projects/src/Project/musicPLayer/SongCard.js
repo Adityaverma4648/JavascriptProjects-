@@ -38,7 +38,7 @@ const SongCards = () =>{
                   
                     console.log(item)
 
-                    const card = '<div><a href="#"><img src = "'+ image + '" alt = "' + title +'"> <small>' + title + '</small></a></div>' 
+                    const card = '<div><a href="'+ music +'"><img src = "'+ image + '" alt = "' + title +'"> <small>' + title + '</small></a></div>' 
 
                      var songCards = document.querySelector('.songCards')
                      songCards.innerHTML += card;  

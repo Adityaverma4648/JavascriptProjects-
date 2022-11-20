@@ -8,8 +8,9 @@ function App(){
 
      const ToggleNav = () =>{
           // return()
-          var li =  document.getElementsByClassName('.navlinks');
-          li.style.display = "block";
+          var navlists =  document.querySelector('.navlink-cont');
+          navlists.classList.toggle('d-none');
+          
      }
 
 
@@ -24,7 +25,8 @@ function App(){
                1_FootInArt
            </h3>
         </div>
-            <ul className="navlists px-5">
+        <ul className="navlists px-5">
+                    <div className="d-flex navlink-cont flex-wrap">
                     <li className="navlinks px-1">
                          <a href="http://localhost:3000/" className='text-dark text-decoration-none px-2 py-1'>Home</a>  
                     </li>
@@ -43,8 +45,12 @@ function App(){
                     <li className="navlinks px-1">
                          <a href="http://localhost:3000/ArtDisplay" className='text-dark text-decoration-none px-2 py-1'>ArtDisplay</a>
                     </li>
+                    <li className="navlinks px-1">
+                         <a href="http://localhost:3000/Calculator" className='text-dark text-decoration-none px-2 py-1'>Calculator</a>
+                    </li>
+                    </div>
                     <div className="px-2 myBurger">
-                       <FaStream className='burger' onClick={ToggleNav} />
+                       <FaStream className='burger' style={{fontSize:"31px"}} onClick={ToggleNav} />
                     </div>
                  </ul>    
                

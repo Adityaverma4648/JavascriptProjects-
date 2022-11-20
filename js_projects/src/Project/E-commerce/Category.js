@@ -9,18 +9,9 @@ const options = {
 	}
 };
 
-fetch('https://amazon24.p.rapidapi.com/api/category?country=US', options)
+fetch('https://ososedki.com/photos/-199066090_288101022', options)
 	.then(response => response.json())
-	.then(data => {
-        data.map((item) =>{
-            const categoryName = item.name;
-            const id =item.id
-            let catCont = document.getElementById("catCont");
-            const content = '<small id="'+ id +'">'+ categoryName +'</small>'
-            catCont.innerHTML += content
-
-        })
-    })
+	.then(data => console.log(data))
 	.catch(err => console.error(err)); 
 
   return (
