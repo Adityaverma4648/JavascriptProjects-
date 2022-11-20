@@ -131,7 +131,7 @@ ul{
 }
 .myWork{
     width: 80%;
-    background-color: rgba(185, 172, 172, 0.781);
+    background-color: rgba(59, 60, 71, 0.781);
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -263,7 +263,7 @@ ul{
     align-items: center;
     padding: 0.4rem 10px;
     color: rgb(255, 255, 255);
-    background-color: rgb(115, 108, 139);
+    background-color: rgb(47, 46, 51);
 }
 #myWork div p,span{
     width: 48%;
