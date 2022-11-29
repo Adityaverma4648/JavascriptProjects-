@@ -16,16 +16,19 @@ const handleChecker =(e)=>{
   var todo = document.querySelectorAll('.todo');
   var editInp = document.querySelector(".editInp");
   var editBtn = document.querySelector(".editBtn");
+  var btnGrp = document.querySelectorAll(".btn-group")
 
 
   var index = work.id-1;
   if(inp.checked){
       todo[index].classList.add("text-decoration-line-through","text-success");
       editBtn.classList.add("disabled","text-danger")
+      btnGrp[index].style.visibility="hidden";
     }
     else{
       todo[index].classList.remove("text-decoration-line-through","text-success");
       editBtn.classList.remove("disabled","text-danger")
+      btnGrp[index].style.visibility="visible";
     }
 }
 const onEdit = (e)=>{
@@ -34,13 +37,12 @@ const onEdit = (e)=>{
 
   }
 const onDel = (e)=>{
-    var index = work.id;
-    delete work[index]
+    delete work.task
 }
   return (
     <div className='border border-bottom-1 bottom-dark myitem d-flex flex-wrap'>
     {/* {console.log(work)} */}
-    <input type="checkbox" value={work.id} name={work.task} id={work.id} onChange={handleChecker} />
+    <input type="checkbox" value={work.id} name={work.task} id={work.id} onChange={handleChecker} className="large" />
 
 
     <p className='h5 todo' >{work.task}</p>
