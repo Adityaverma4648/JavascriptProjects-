@@ -10,7 +10,7 @@ function ToDoList(){
     return(
 
           <div className="compCont">
-             <div className="container-fluid bg-black text-white todolist d-flex flex-column justify-content-center align-items-center" >
+             <div className="container-fluid bg-flashy text-white todolist d-flex flex-column justify-content-center align-items-center" >
                  <div className='container d-flex align-items-center justify-content-between'>
                   <h3>
                     To Do List

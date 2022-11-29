@@ -11,7 +11,7 @@ const Home = () =>{
         {
             name : "ToDoList",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            image : "'../assets/toDoList.png'"
         },
         {
             name : "ResponsiveBlogSite",
@@ -41,13 +41,13 @@ const Home = () =>{
     ];
 
     return (
-        <div className="Home compCont bg-black d-flex flex-column">
-             <div className="text-white container-fluid d-flex align-items-center justify-content-center">
+        <div className="bg-black d-flex flex-column">
+             <div className="text-white container-fluid d-flex align-items-center justify-content-center" >
                   <h3 className='py-4'>
                     Projects
                   </h3>
              </div>
-            <div className="container-fluid text-white compCont d-flex align-items-center justify-content-center flex-wrap py-4">
+            <div className="container-fluid text-white d-flex align-items-center justify-content-center flex-wrap py-4">
                   
                   {projects.map((project , index)=>{
 

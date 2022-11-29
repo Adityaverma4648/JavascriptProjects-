@@ -3,9 +3,19 @@ import {FaBrush} from "react-icons/fa";
 import {FaGamepad} from "react-icons/fa";
 import {FaReact} from "react-icons/fa"; 
 import {FaVolleyballBall} from "react-icons/fa"; 
+import {useState} from "react"
+import MyReact from "../Project/ResponsiveBlog/MyReact";
 
 const ResponsiveBlogSite = () =>{
+  const [state,setState] = useState("ArtBlog");
   
+
+  const handleChange = (e)=>{
+    var btn = document.querySelectorAll("button");
+    console.log(btn[0].getAttribute("title"));
+    // btn.getAttribute("type")
+    //  setState({})
+  }
   return(
  
     <div className="bg-black response d-flex flex-column py-3">
@@ -18,20 +28,20 @@ const ResponsiveBlogSite = () =>{
                     </h1>
                     <div className="position-absolute py-2">
                       <div className="p-1 d-flex justify-content-center">
-                      <a href="#ArtBlog" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="top" title="Art Blog">
+                      <button type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="top" title="ArtBlog" onClick={handleChange}>
                         <FaBrush className="icon"/>
-                    </a>
-                    <a href="#GamePad" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="right" title="Gaming Blog">
+                    </button>
+                    <button type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="right" title="GamingBlog" onClick={handleChange}>
                         <FaGamepad  className="icon" />
-                    </a>
+                    </button>
                    </div>
                      <div className="p-1" >
-                      <a href="#ReactBlog" type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="bottom" title="React Dev Blog">
+                      <button type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="bottom" title="ReactBlog" onClick={handleChange}>
                         <FaReact  className="icon" />
-                      </a>
-                      <a href="#Volley" type="button" className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="right" title="Sports Blog" id="sports">
+                      </button>
+                      <button type="button"className="compBtn border-0 p-3" data-toggle="tooltip" data-placement="right" title="SportsBlog" id="sports"  onClick={handleChange}>
                         <FaVolleyballBall className="icon"/>
-                      </a>
+                      </button>
                      </div>
                     </div>
               </div>

@@ -1,43 +1,21 @@
+import { useEffect ,useState } from "react";
+import products from "./products.json";
+import ProCard from "./ProCard";
+
 const TopDeals = () => {
-
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '4fbcfea748msh22a8e752a443b6dp15a8afjsn3b3623db9eae',
-		'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
-	}
-};
-
-fetch('https://amazon24.p.rapidapi.com/api/todaydeals', options)
-	.then(response => response.json())
-	.then(data => {
-        data.map((item)=>{
-                const title = item.deal_title;
-                const image = item.deal_main_image_url;
-                const site = item.deal_details_url;
-                const startDate = item.deal_start;
-                const endDate = item.deal_end;
-                const min_price = item.app_sale_range.min;
-                const max_price = item.app_sale_range.max;
-
-                 const content = '<div><img src='+ image +' alt=' + title +'> <small><strong>'+ title +'</strong></small> <span></span></div>'
-                 
-                const dealFetcher = document.querySelector('.dealFetcher');
-                dealFetcher.innerHTML += SVGTextContentElement;
-
-    })
-    })
-	.catch(err => console.error(err));
-
+  const [data , setData] = useState(products);
   return (
-    <div className="TopDeals container-fluid bg-danger py-2" style={{height : "30vh"}}>
-         <div className="compHead container h5">
-             Todays Top Deals
-         </div>
-         <div className="dealFetcher container bg-warning py-2">
-         </div>
-    </div>
-  )
+     <div>
+     <div className="container-fluid py-2 px-2 display-6 text-bottom">
+         Top Deals
+     </div>
+         <div className="d-flex py-5 flex-wrap justify-content-center align-items-center" style={{maxWidth:"100vw"}}>
+          {data?.map((items)=>{
+              return <ProCard key={items.id} data={items} />
+          })}
+      </div>
+     </div>
+  );
 }
 
 

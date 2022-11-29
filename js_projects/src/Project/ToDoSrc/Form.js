@@ -41,7 +41,7 @@ function Form(){
                          </form>
                        
                       </div>
-                      <div className='bg-light container text-black py-2' id='changeText'>
+                      <div className='bg-black container text-danger py-2' id='changeText'>
                          {toDoList.length === 0? "No task left for now" : toDoList.length + " task Pending"}
                       </div>
                      </div>
