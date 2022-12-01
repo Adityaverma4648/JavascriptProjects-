@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 li{
     list-style: none;
     cursor: pointer;
@@ -41,8 +40,6 @@ ul{
 
 .myBurger{
     cursor: pointer;
-    /* display: none; */
-    position: relative;
 }
 
 /*  Music Player */
@@ -192,7 +189,7 @@ ul{
 }
 
 .card{
-    background-color: rgb(22, 37, 32);
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
     color: white;
     height: 30vh;
     width: 10vw;
@@ -317,4 +314,65 @@ input.large{
     height: 21px;
     width: 21px;
     accent-color: green;
+}
+/* Ecommerce iconCont */
+.iconCont, .myText{
+     background:  linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)
+}
+.HeartIconClicked{
+    /* position: absolute; */
+    animation: beat 3s ease-in-out;
+}
+@keyframes beat{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1.2);
+         
+    }
+    75%{
+        transform: scale(1.5);
+       
+    }
+    100%{
+        transform: scale(1.0);
+       
+    }
+}
+.cartIconClicked{
+    /* position: absolute; */
+    animation: cart 3s ease-in-out;
+}
+@keyframes cart{
+    0%{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(35deg);
+    }
+    50%{
+        transform: rotateY(-35deg);
+         
+    }
+    75%{
+        transform: rotateY(35deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.products::-webkit-scrollbar{
+    display: none;
 }

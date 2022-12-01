@@ -14,7 +14,6 @@ const handleChange = (e)=>{
 const handleChecker =(e)=>{
   var inp = document.getElementById(work.id);
   var todo = document.querySelectorAll('.todo');
-  var editInp = document.querySelector(".editInp");
   var editBtn = document.querySelector(".editBtn");
   var btnGrp = document.querySelectorAll(".btn-group")
 
@@ -37,7 +36,7 @@ const onEdit = (e)=>{
 
   }
 const onDel = (e)=>{
-    delete work.task
+    delete work[work.id]
 }
   return (
     <div className='border border-bottom-1 bottom-dark myitem d-flex flex-wrap'>

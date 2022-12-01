@@ -9,7 +9,9 @@ function App(){
      const ToggleNav = () =>{
           // return()
           var navlists =  document.querySelector('.navlink-cont');
+          var nav  = document.querySelector('.navbar');
           navlists.classList.toggle('d-none');
+          nav.classList.add('d-flex')
           
      }
 

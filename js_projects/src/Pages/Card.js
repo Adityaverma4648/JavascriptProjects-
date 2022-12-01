@@ -2,8 +2,7 @@ import '../Component.css';
 
 const Card = (props) =>{
     return (
-        <div className="card">
-            <img src={props.image} alt={props.name} />
+        <div className="card" style={{overflow:"hidden"}}>
              <h5>
                 {props.name}
              </h5>

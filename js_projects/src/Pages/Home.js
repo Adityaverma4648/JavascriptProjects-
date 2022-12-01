@@ -6,37 +6,37 @@ const Home = () =>{
         {
             name : "Ecommerce",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
         {
             name : "ToDoList",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "'../assets/toDoList.png'"
+            // image : "'../assets/toDoList.png'"
         },
         {
             name : "ResponsiveBlogSite",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
         {
             name : "MusicPlayer",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
         {
             name : "ArtDisplay",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
         {
             name : "Calculator",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
         {
             name : "Ecommerce",
             desc : "Lorem ipsum dolor, sit amet consectetur adipisicing elit Earum temporibus repellendus natus magni",
-            image : "lorem23"
+            // image : "lorem23"
         },
     ];
 
@@ -59,7 +59,7 @@ const Home = () =>{
                       }
                    
                     return <a href={urlBuilder(project)} className='text-decoration-none'>
-                    <Card key={index} name={project.name} desc = {project.desc} image={project.image} />
+                    <Card key={index} name={project.name} desc = {project.desc} />
                     </a>
                   })}
                    
