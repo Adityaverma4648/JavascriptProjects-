@@ -373,6 +373,10 @@ input.large{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.products::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
 }
+
+
+
+

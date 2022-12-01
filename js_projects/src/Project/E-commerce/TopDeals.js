@@ -8,11 +8,11 @@ const TopDeals = () => {
   return (
      <div className="d-flex flex-column products">
      {/*  myHeading  */}
-     <div className="container-fluid px-2 display-6 text-bottom d-flex justify-content-between align-items-center bg-info top-0 position-fixed">
+     <div className="container-fluid px-2 display-6 text-bottom d-flex bg-info top-0 position-fixed align-items-center">
          <div className="text-gradient bg-danger sticky" style={{height:"20vh"}}>Top Deals</div>
      </div>
      {/*  My product fetcher */}
-         <div className="d-flex py-5 flex-wrap justify-content-center align-items-center" style={{maxWidth:"100vw", height:"auto"}}>
+         <div className="d-flex flex-wrap justify-content-center align-items-center" style={{maxWidth:"100vw",padding:"10vh 0px",height:"auto"}}>
           {data?.map((items)=>{
               return <ProCard key={items.id} data={items} />
           })}

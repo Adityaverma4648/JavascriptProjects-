@@ -44,10 +44,10 @@ const ProCard = (props) => {
 
         <div className="d-flex flex-column m-1 proCard my-5 mx-1">
     <div className="iconCont d-flex justify-content-between align-items-center">
-    <div className="px-2 py-1 clickHeartCont text-black" style={{zIndex : "3",fontSize:"25px",cursor:"pointer"}} onClick={clickHeart}>
+    <div className="px-2 py-1 clickHeartCont text-black" style={{fontSize:"25px",cursor:"pointer"}} onClick={clickHeart}>
            <FaHeart className="HeartIcon"/>
     </div>
-    <div className="px-2 py-1 clickCartCont text-black" style={{zIndex : "3",fontSize:"25px",cursor:"pointer"}} onClick={clickCart}>
+    <div className="px-2 py-1 clickCartCont text-black" style={{fontSize:"25px",cursor:"pointer"}} onClick={clickCart}>
            <FaShoppingCart className="cartIcon" />
     </div>
     </div>
