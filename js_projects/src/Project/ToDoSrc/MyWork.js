@@ -36,7 +36,9 @@ const onEdit = (e)=>{
 
   }
 const onDel = (e)=>{
-    delete work[work.id]
+  //   work.filter((wrk)=>
+        
+  // ) 
 }
   return (
     <div className='border border-bottom-1 bottom-dark myitem d-flex flex-wrap'>
