@@ -6,6 +6,8 @@ import {FaPen} from "react-icons/fa";
 const MyWork = ({work}) => {
 
 const [edit ,setEdit] = useState("")
+const selectedID = 0;
+
 
 const handleChange = (e)=>{
   setEdit(e.target.value)
@@ -32,13 +34,21 @@ const handleChecker =(e)=>{
 }
 const onEdit = (e)=>{
   var todo = document.querySelectorAll('.todo');
-     todo[work.id-1].innerHTML = edit;
+  var pen = document.querySelectorAll("#penIcon");
+  var editButtonSubmit = document.createElement("BUTTON")
+  var editBtn = document.querySelector(".editBtn")
+  var text = document.createTextNode("editWork")
+
+  pen[work.id-1].style.display = "none" 
+  editButtonSubmit.setAttribute("class","editButtonSubmit")
+  editButtonSubmit.appendChild(text)
+  editBtn[work.id -1].appendChild(editButtonSubmit)  
+    //  todo[work.id-1].innerHTML = edit;
 
   }
-const onDel = (e)=>{
-  //   work.filter((wrk)=>
-        
-  // ) 
+const onDel = (e)=>{  
+        work.filter(wrk => wrk )
+
 }
   return (
     <div className='border border-bottom-1 bottom-dark myitem d-flex flex-wrap'>
@@ -50,7 +60,7 @@ const onDel = (e)=>{
        <p className='btn-group justify-content-end'>
        <input type="text" name="editInp" className="editInp" value={edit} onChange={handleChange} />
 
-       <button className="bg-transparent border-0 px-2 text-white editBtn" style={{fontSize:"21px"}} onClick={onEdit}><FaPen /></button>
+       <button className="bg-transparent border-0 px-2 text-white editBtn" style={{fontSize:"21px"}} onClick={onEdit}><FaPen id="penIcon" /></button>
        <button className="trash bg-transparent border-0 px-2 text-white" style={{fontSize:"21px"}} onClick={onDel}><FaTrash /></button>
        </p>
     </div>

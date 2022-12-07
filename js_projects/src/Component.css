@@ -9,10 +9,9 @@ li{
     cursor: pointer;
 }
 
-.OnclickEffect{
+/* .OnclickEffect{
     border-bottom: 2px solid rgb(105, 16, 16);
-}
-
+} */
 
 .navbar {
     position: fixed;
@@ -285,6 +284,12 @@ ul{
 #catCont::-webkit-scrollbar{
     display: none;
 }
+p input {
+   background-color: rgba(255,255,255,0.2);
+   border-bottom: 1px solid #fff ;
+   border-right: none;
+}
+
 
 .bg-flashy{
     background: #000046;  /* fallback for old browsers */
